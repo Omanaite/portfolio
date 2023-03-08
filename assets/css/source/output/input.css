@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../portfolio/assets/css/source/base/_reset-meyer.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------*\
+  #FONT-BASE roboto-regular - latin
+\*------------------------------------*/
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.eot?#iefix") format("embedded-opentype"), url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2") format("woff2"), url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff") format("woff"), url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.ttf") format("truetype"), url("../base/fonts/roboto-v30-latin/roboto-v30-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/*------------------------------------*\
+  #FONT VARIABLE
+\*------------------------------------*/
+/*------------------------------------*\
+  #TYPOGRAPY SETUP
+\*------------------------------------*/
+/* line 8, ../../portfolio/assets/css/source/base/_typography.scss */
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+}
+
+/* line 15, ../../portfolio/assets/css/source/base/_typography.scss */
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+/* line 22, ../../portfolio/assets/css/source/base/_typography.scss */
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+/* line 29, ../../portfolio/assets/css/source/base/_typography.scss */
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+/* line 36, ../../portfolio/assets/css/source/base/_typography.scss */
+h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+/* line 43, ../../portfolio/assets/css/source/base/_typography.scss */
+h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* line 50, ../../portfolio/assets/css/source/base/_typography.scss */
+.tittle-large {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* line 57, ../../portfolio/assets/css/source/base/_typography.scss */
+.tittle-medium {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .15px;
+}
+
+/* line 65, ../../portfolio/assets/css/source/base/_typography.scss */
+.tittle-small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px;
+}
+
+/* line 73, ../../portfolio/assets/css/source/base/_typography.scss */
+.label-large {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px;
+}
+
+/* line 81, ../../portfolio/assets/css/source/base/_typography.scss */
+.label-medium {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+}
+
+/* line 89, ../../portfolio/assets/css/source/base/_typography.scss */
+.label-small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: .5px;
+}
+
+/* line 97, ../../portfolio/assets/css/source/base/_typography.scss */
+.body-large {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .5px;
+}
+
+/* line 105, ../../portfolio/assets/css/source/base/_typography.scss */
+.body-medium {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .25px;
+}
+
+/* line 113, ../../portfolio/assets/css/source/base/_typography.scss */
+.body-medium {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .4px;
+}
+
+/* line 1, ../../portfolio/assets/css/source/base/_base.scss */
+html {
+  font-family: 'Roboto';
+}
+
+/* line 6, ../../portfolio/assets/css/source/layout/_header.scss */
+nav {
+  background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);
+}
+
+/* line 15, ../../portfolio/assets/css/source/layout/_header.scss */
+.header__sm-menu {
+  background-color: #635985;
+}
+
+/* line 18, ../../portfolio/assets/css/source/layout/_header.scss */
+.sm-menu__ul li:first-child {
+  border-top: 1px solid #eee;
+}
+
+/* line 21, ../../portfolio/assets/css/source/layout/_header.scss */
+.sm-menu__ul li {
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 640px) {
+  /* line 25, ../../portfolio/assets/css/source/layout/_header.scss */
+  .profile-photo {
+    margin-top: 0.25rem;
+    width: 10%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 640px) {
+  /* line 33, ../../portfolio/assets/css/source/layout/_header.scss */
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 38, ../../portfolio/assets/css/source/layout/_header.scss */
+  .nav_ul {
+    display: none;
+  }
+}
+
+/* line 1, ../../portfolio/assets/css/source/layout/_home.scss */
+main {
+  height: 40rem;
+  background-color: f0f0f0;
+  background-repeat: no-repeat;
+  border: solid 2px red;
+}
+
+/*# sourceMappingURL=input.css.map */

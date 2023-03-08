@@ -1,0 +1,41 @@
+header  {
+//   height: 2.625rem;
+//    background: linear-gradient(360deg, #393053 29.9%, #443C68 80%, ); 
+//   background-color: #443C68;
+}
+nav{
+    background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);
+}
+.profile-photo{
+
+}
+.burger{
+
+}
+.header__sm-menu{
+    background-color: #635985;
+}
+.sm-menu__ul li:first-child{
+    border-top: 1px solid #eee;
+}
+.sm-menu__ul li{
+    border-bottom: 1px solid #eee;
+}
+@media (max-width: 640px){
+    .profile-photo{
+        margin-top: 0.25rem;
+        width: 10%;
+        height: 80%;
+    }
+}
+
+@media (min-width: 640px){
+    .burger {
+    display: none;
+    }
+}
+@media (max-width: 640px){
+    .nav_ul {
+    display: none;
+    }
+}
