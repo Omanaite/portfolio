@@ -5,6 +5,10 @@ header  {
 //   height: 2.625rem;
 //    background: linear-gradient(360deg, #393053 29.9%, #443C68 80%, ); 
 //   background-color: #443C68;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
 }
 nav{
     // background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);

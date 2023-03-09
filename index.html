@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pablo Chandia</title>
   </head>
-  <body class="">
+  <body id="body-ref" class="">
     <header class="">
       <nav class="flex px-8 py-4 lg:px-20 lg:py-5 items-center place-content-between">
         <div class="flex text-neutral-50">
@@ -16,10 +16,10 @@
          </div>
          <div class="flex text-neutral-50">
            <ul class="flex gap-x-10 nav_ul">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Expertise</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="#body-ref">Home</a></li>
+             <li><a href="#about-ref">About</a></li>
+             <li><a href="#experience-ref">Experience</a></li>
+             <li><a href="#contact-ref">Contact</a></li>
            </ul>
            <div id="burger-toggler" class="burger">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,23 +31,23 @@
       <div id="sm-menu-ref" class="header__sm-menu place-content-end hidden">
         <ul class="sm-menu__ul justify-end text-end text-neutral-50 w-full">
           <li class="">
-            <a class="py-3 pr-5 block">Home</a>
+            <a id="sm-menu-ref-1" class="py-3 pr-5 block" href="#body-ref">Home</a>
           </li>
           <li class="">
-            <a class="py-3 pr-5 block">About</a>
+            <a id="sm-menu-ref-2" class="py-3 pr-5 block" href="#about-ref">About</a>
           </li>
           <li class="">
-            <a class="py-3 pr-5 block">Experience</a>
+            <a id="sm-menu-ref-3" class="py-3 pr-5 block" href="#experience-ref">Experience</a>
           </li>
           <li class="">
-            <a class="py-3 pr-5 block">Contact</a>
+            <a id="sm-menu-ref-4" class="py-3 pr-5 block" href="#contact-ref">Contact</a>
           </li>
         </ul>
       </div>
     </header>
     <main class="">
       <div class="home-hero">
-        <div class="home-hero__content flex flex-col pt-16 md:pt-40 mx-12">
+        <div class="home-hero__content flex flex-col pt-36 md:pt-40 mx-12">
           <h1 class="uppercase text-slate-50 text-center tracking-wide">Hey! I'm Pablo Chandía</h1>
           <div class="home-hero__info mt-6">
             <p class="text-slate-50 text-center body-large">
@@ -62,12 +62,12 @@
             </p>
           </div>
           <div class="home-hero__btn-wrapper flex self-center my-16 md:my-28 xl:my-40">
-            <a class="block uppercase rounded px-8 py-4 navy-darker text-slate-50 tracking-wide">experience</a>
+            <a class="block uppercase rounded px-8 py-4 navy-darker text-slate-50 tracking-wide" href="#experience-ref">experience</a>
           </div>
         </div>
       </div>
       <div class="home-about white xl:px-28 px-16 text-center pb-16">
-        <div class="home-about__content flex flex-col py-4">
+        <div id="about-ref" class="home-about__content flex flex-col py-4">
           <div class="tittle-big mt-16 uppercase tracking-widest">
             <h3>About me</h3>
           </div>
@@ -92,9 +92,7 @@
                   learned over the years in <strong>Web Development</strong> so it
                   can help other people of the Dev Community. Feel free to Connect
                   or Follow me on my
-                  <a rel="noreferrer" href="https://www.linkedin.com/pchandia/" target="_blank">Linkedin</a>
-                  where I post useful content related to Web Development and
-                  Programming
+                  <a href="https://www.linkedin.com/in/pchandia/" target="">Linkedin</a>
                 </p>
                 <p class="py-2 tracking-wide">
                   I'm open to <strong>Job</strong> opportunities where I can
@@ -103,7 +101,7 @@
                   <strong>contact</strong> me.
                 </p>
               </div>
-              <a class="block uppercase rounded px-8 py-4 navy-darker text-slate-50 mt-8 w-min tracking-wide">contact</a>
+              <a class="block uppercase rounded px-8 py-4 navy-darker text-slate-50 mt-8 w-min tracking-wide" href="#contact-ref">contact</a>
             </div>
             <div class="home-about__skills basis-1/2">
               <div class="tittle-large text-start mb-8">
@@ -175,16 +173,31 @@
         </div>
       </div>
       <div class="home-expertise off-white xl:px-28 px-16 text-center">
-        <div class="home-expertise__content flex flex-col py-4">
+        <div id="experience-ref" class="home-expertise__content flex flex-col py-4">
           <div class="tittle-big mt-16 uppercase tracking-widest">
             <h3>experience</h3>
           </div>
-          <p class="mt-16 mb-32 xl:px-96 px-12 body-large"> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Commodo odio aenean sed adipiscing diam donec. Tellus in hac 
-            habitasse platea dictumst vestibulum rhoncus est. 
+          <p class="mt-16 xl:px-96 px-12 body-large"> 
+            When I started exploring  <strong>web technologies</strong> I discovered a whole new 
+            world that offers possibilities to express creativity and work in 
+            competitive environments at the same time. That's why I have 
+            dedicated the last years to the constant learning of <strong>web concepts</strong> 
+            and <strong>technologies</strong>.
           </p>
+          </br>
+          </br>
+          <p>This website has been created with the following technologies:</p>
+          </br>
+          <div class="tech-wrapper flex flex-wrap gap-3 justify-center">
+            <span class="rounded-full" class="rounded-full">HTML</span><span class="rounded-full">CSS</span><span class="rounded-full">Sass</span>
+            <span class="rounded-full">Tailwind</span><span class="rounded-full">Vite.js</span><span class="rounded-full">Typescript</span>
+            <span class="rounded-full">Javascript</span>
+          </div>
+          </br>
+          <p class="flex flex-col items-center justify-center">Hosted by <img class="w-20" src="assets/img/GitHub_Logo.png"></p>
+          </br>
+          <p class="mb-32 body-large">Here is an excerpt of what I'm doing now.</p>
+
           <div class="home-expertise__main-wrapper flex place-content-between gap-32">
             <div class="home-expertise__main">
               <div class="tittle-large text-start mb-8">
@@ -197,13 +210,13 @@
                         <img class="absolute -left-6 w-24 h-24 white shadow-lg " src="assets/img/devhaus-logo.svg">
                         <div class="flex flex-col py-5 pl-24">
                           <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Camp student</strong>
-                          <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Devhaus Leipzig, Germany</span>
+                          <span class="rounded-full" class="text-slate-500 text-sm font-medium dark:text-slate-400">Devhaus Leipzig, Germany</span>
                         </div>
                       </div>
                     </div>
                     <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5"></div>
                     <p class="py-2">
-                      Devhaus Leipzig is a platform for aspiring and experienced 
+                      <strong>Devhaus Leipzig</strong> is a platform for aspiring and experienced 
                       tech professionals to work on their craft.
                       intensive full-time <strong>training program</strong>, developed to equip 
                       people from various professional backgrounds with the 
@@ -224,7 +237,7 @@
                       <img class="absolute -left-6 w-24 h-24 navy-darker shadow-lg border-2 border-black border-solid p-2 rounded-full" src="assets/img/BRAINNEST.png">
                       <div class="flex flex-col py-5 pl-24">
                         <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Camp student</strong>
-                        <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Brainnest, Germany</span>
+                        <span class="rounded-full" class="text-slate-500 text-sm font-medium dark:text-slate-400">Brainnest, Germany</span>
                       </div>
                     </div>
                   </div>
@@ -247,15 +260,15 @@
                     class consulting and training services for
                     a wide range of industries around the
                     world A well equipped team, advanced
-                    tools, and modern methodologies are
+                    tools, and <strong>modern methodologies</strong>  are
                     some of what we correctly utilize to offer
                     our clients what makes them the best in
                     their fields
                   </p>
                   <p class="py-2 tracking-wide">
                     This is a one
-                    month intensive training
-                    program offered by Brainnest that leads the
+                    month intensive <strong>training
+                    program</strong> offered by Brainnest that leads the
                     theoretical and practical part. Besides the
                     experience, training, connections, and
                     exposure, this program brings a list of
@@ -269,25 +282,25 @@
                     <img class="absolute -left-6 w-24 h-24 white shadow-lg border-2 border-black border-solid p-1" src="assets/img/tcg.png">
                     <div class="flex flex-col py-5 pl-24">
                       <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Front End Developer</strong>
-                      <span class="text-slate-500 text-sm font-medium dark:text-slate-400">TCG Chile, Chile</span>
+                      <span class="rounded-full" class="text-slate-500 text-sm font-medium dark:text-slate-400">TCG Chile, Chile</span>
                     </div>
                   </div>
                 </div>
                 <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5"></div>
                 <p class="py-2">
-                  TCG Chile was born from the need to create a web marketplace 
-                  system for trading Magic the Gathering cards. Currently there 
+                  <strong>TCG Chile</strong> was born from the need to create a web marketplace 
+                  system for trading <strong>Magic the Gathering cards</strong>. Currently there 
                   are other renowned marketplaces around the world, however 
-                  in Latin America there is no provider of trading service so 
+                  in <strong>Latin America</strong> there is no provider of trading service so 
                   it becomes the first start-up with a unique product in its 
-                  region in this category (Marketplace).
+                  region and category.
                 </p>
                 <p class="py-2 tracking-wide">
                   The site is currently under development and is soon to be 
                   launched.
                 </p>
                 <p class="py-2 tracking-wide">
-                  I am performing the work of Front End Developer since the 
+                  I am performing the work of <strong>Front End Developer</strong> since the 
                   beginning of this project and in turn the planning and 
                   implementation of this, I am responsible for the web 
                   development of this project and the completion of the same.
@@ -299,7 +312,7 @@
         </div>
       </div>
       <div class="home-contact white xl:px-28 px-16 text-center pb-16">
-        <div class="home-contact__content flex flex-col py-4">
+        <div id="contact-ref" class="home-contact__content flex flex-col py-4">
           <div class="tittle-big mt-16 uppercase tracking-widest">
             <h3>contact</h3>
           </div>

@@ -41,6 +41,12 @@ main{
   display: block;
   text-align: left;
 }
+.tech-wrapper span{
+  border: 2px solid $navy-light;
+  background-color: $white;
+  padding: .5rem 2rem;
+  
+}
 
 @media (max-width: 640px){
   .contact__form-input{

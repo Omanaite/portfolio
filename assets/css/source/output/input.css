@@ -289,30 +289,43 @@ footer {
   line-height: 15px;
 }
 
+/* line 32, ../../portfolio/assets/css/source/base/_base.scss */
+strong {
+  font-weight: bolder !important;
+}
+
 /*------------------------------------*\
   #HEADER STYLE
 \*------------------------------------*/
-/* line 9, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 4, ../../portfolio/assets/css/source/layout/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 13, ../../portfolio/assets/css/source/layout/_header.scss */
 nav {
   background-color: #0f0e61;
 }
 
-/* line 20, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 24, ../../portfolio/assets/css/source/layout/_header.scss */
 .header__sm-menu {
   background-color: #0f0e61;
 }
 
-/* line 23, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 27, ../../portfolio/assets/css/source/layout/_header.scss */
 .sm-menu__ul li:first-child {
   border-top: 1px solid #eee;
 }
 
-/* line 26, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 30, ../../portfolio/assets/css/source/layout/_header.scss */
 .sm-menu__ul li {
   border-bottom: 1px solid #eee;
 }
 
-/* line 29, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 33, ../../portfolio/assets/css/source/layout/_header.scss */
 .tittle-wrapper > img {
   background-image: url(/assets/img/foto-perfil.jpg);
   background-repeat: no-repeat;
@@ -323,28 +336,28 @@ nav {
   #MEDIA QUERYS
 \*------------------------------------*/
 @media (max-width: 640px) {
-  /* line 38, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 42, ../../portfolio/assets/css/source/layout/_header.scss */
   .tittle-wrapper > img {
     height: 100%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 43, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 47, ../../portfolio/assets/css/source/layout/_header.scss */
   .burger {
     display: none;
   }
 }
 
 @media (max-width: 640px) {
-  /* line 48, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 52, ../../portfolio/assets/css/source/layout/_header.scss */
   .nav_ul {
     display: none;
   }
 }
 
 @media (max-width: 640px) {
-  /* line 53, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 57, ../../portfolio/assets/css/source/layout/_header.scss */
   h6 {
     font-size: 20px;
   }
@@ -391,8 +404,15 @@ main {
   text-align: left;
 }
 
+/* line 44, ../../portfolio/assets/css/source/layout/_home.scss */
+.tech-wrapper span {
+  border: 2px solid #635985;
+  background-color: #ffffff;
+  padding: .5rem 2rem;
+}
+
 @media (max-width: 640px) {
-  /* line 46, ../../portfolio/assets/css/source/layout/_home.scss */
+  /* line 52, ../../portfolio/assets/css/source/layout/_home.scss */
   .contact__form-input {
     padding: 1rem;
     font-size: 1rem;
@@ -400,21 +420,21 @@ main {
 }
 
 @media (max-width: 1024px) {
-  /* line 52, ../../portfolio/assets/css/source/layout/_home.scss */
+  /* line 58, ../../portfolio/assets/css/source/layout/_home.scss */
   .home-about__main-wrapper {
     flex-direction: column;
   }
 }
 
 @media (max-width: 640px) {
-  /* line 57, ../../portfolio/assets/css/source/layout/_home.scss */
+  /* line 63, ../../portfolio/assets/css/source/layout/_home.scss */
   .home-about, .home-expertise {
     padding: 0 2rem;
   }
 }
 
 @media (max-width: 640px) {
-  /* line 62, ../../portfolio/assets/css/source/layout/_home.scss */
+  /* line 68, ../../portfolio/assets/css/source/layout/_home.scss */
   .home-about__main-wrapper {
     flex-direction: column;
     gap: 4rem;
@@ -422,13 +442,13 @@ main {
 }
 
 @media (min-width: 640px) {
-  /* line 73, ../../portfolio/assets/css/source/layout/_home.scss */
+  /* line 79, ../../portfolio/assets/css/source/layout/_home.scss */
   .my-20 {
     margin: 8rem 0;
   }
 }
 
-/* line 77, ../../portfolio/assets/css/source/layout/_home.scss */
+/* line 83, ../../portfolio/assets/css/source/layout/_home.scss */
 .come-front-menu {
   z-index: 1;
   position: absolute;
