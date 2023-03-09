@@ -263,6 +263,31 @@ body {
   background-image: url(/assets/img/8150248.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 14, ../../portfolio/assets/css/source/base/_base.scss */
+main {
+  flex: 1;
+  padding: 0;
+}
+
+/* line 19, ../../portfolio/assets/css/source/base/_base.scss */
+footer {
+  background-color: #18122B;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #EDEDED;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 15px;
 }
 
 /*------------------------------------*\
