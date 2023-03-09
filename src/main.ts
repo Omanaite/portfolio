@@ -1,5 +1,5 @@
-import 'style.css'
-import 'assets/css/source/output/input.css'
+import '../src/style.css'
+import '../assets/css/source/output/input.css'
 
 const burgerTogglerRef = document.getElementById("burger-toggler")!;
 
