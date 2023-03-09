@@ -59,6 +59,36 @@ table {
   border-spacing: 0;
 }
 
+/* line 8, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.navy-darker {
+  background-color: #18122B;
+}
+
+/* line 11, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.navy-deep {
+  background-color: #393053;
+}
+
+/* line 14, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.navy-soft {
+  background-color: #443C68;
+}
+
+/* line 17, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.navy-light {
+  background-color: #635985;
+}
+
+/* line 20, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.off-white {
+  background-color: #f0f0f0;
+}
+
+/* line 23, ../../portfolio/assets/css/source/base/_color-palette.scss */
+.white {
+  background-color: #ffffff;
+}
+
 /*------------------------------------*\
   #FONT-BASE roboto-regular - latin
 \*------------------------------------*/
@@ -138,7 +168,7 @@ h6 {
 .tittle-large {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
 }
@@ -147,7 +177,7 @@ h6 {
 .tittle-medium {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: .15px;
@@ -198,7 +228,7 @@ h6 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: .5px;
 }
@@ -228,55 +258,159 @@ html {
   font-family: 'Roboto';
 }
 
-/* line 6, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 4, ../../portfolio/assets/css/source/base/_base.scss */
+body {
+  background-image: url(/assets/img/8150248.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------------------------------*\
+  #HEADER STYLE
+\*------------------------------------*/
+/* line 9, ../../portfolio/assets/css/source/layout/_header.scss */
 nav {
-  background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);
+  background-color: #0f0e61;
 }
 
-/* line 15, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 20, ../../portfolio/assets/css/source/layout/_header.scss */
 .header__sm-menu {
-  background-color: #635985;
+  background-color: #0f0e61;
 }
 
-/* line 18, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 23, ../../portfolio/assets/css/source/layout/_header.scss */
 .sm-menu__ul li:first-child {
   border-top: 1px solid #eee;
 }
 
-/* line 21, ../../portfolio/assets/css/source/layout/_header.scss */
+/* line 26, ../../portfolio/assets/css/source/layout/_header.scss */
 .sm-menu__ul li {
   border-bottom: 1px solid #eee;
 }
 
+/* line 29, ../../portfolio/assets/css/source/layout/_header.scss */
+.tittle-wrapper > img {
+  background-image: url(/assets/img/foto-perfil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------------------------------*\
+  #MEDIA QUERYS
+\*------------------------------------*/
 @media (max-width: 640px) {
-  /* line 25, ../../portfolio/assets/css/source/layout/_header.scss */
-  .profile-photo {
-    margin-top: 0.25rem;
-    width: 10%;
-    height: 80%;
+  /* line 38, ../../portfolio/assets/css/source/layout/_header.scss */
+  .tittle-wrapper > img {
+    height: 100%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 33, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 43, ../../portfolio/assets/css/source/layout/_header.scss */
   .burger {
     display: none;
   }
 }
 
 @media (max-width: 640px) {
-  /* line 38, ../../portfolio/assets/css/source/layout/_header.scss */
+  /* line 48, ../../portfolio/assets/css/source/layout/_header.scss */
   .nav_ul {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 53, ../../portfolio/assets/css/source/layout/_header.scss */
+  h6 {
+    font-size: 20px;
   }
 }
 
 /* line 1, ../../portfolio/assets/css/source/layout/_home.scss */
 main {
   height: 40rem;
-  background-color: f0f0f0;
-  background-repeat: no-repeat;
-  border: solid 2px red;
+  backdrop-filter: blur(10px);
+}
+
+/* line 12, ../../portfolio/assets/css/source/layout/_home.scss */
+.tittle-big::after {
+  content: '';
+  position: absolute;
+  margin-top: 1.5rem;
+  height: 5px;
+  width: 3rem;
+  background: #393053;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* line 26, ../../portfolio/assets/css/source/layout/_home.scss */
+.contact__form-input {
+  padding: 2rem;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* line 36, ../../portfolio/assets/css/source/layout/_home.scss */
+.contact__form-label {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  /* line 46, ../../portfolio/assets/css/source/layout/_home.scss */
+  .contact__form-input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 52, ../../portfolio/assets/css/source/layout/_home.scss */
+  .home-about__main-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 57, ../../portfolio/assets/css/source/layout/_home.scss */
+  .home-about, .home-expertise {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 62, ../../portfolio/assets/css/source/layout/_home.scss */
+  .home-about__main-wrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 640px) {
+  /* line 73, ../../portfolio/assets/css/source/layout/_home.scss */
+  .my-20 {
+    margin: 8rem 0;
+  }
+}
+
+/* line 77, ../../portfolio/assets/css/source/layout/_home.scss */
+.come-front-menu {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
 }
 
 /*# sourceMappingURL=input.css.map */

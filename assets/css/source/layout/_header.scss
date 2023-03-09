@@ -1,10 +1,15 @@
+/*------------------------------------*\
+  #HEADER STYLE
+\*------------------------------------*/
 header  {
 //   height: 2.625rem;
 //    background: linear-gradient(360deg, #393053 29.9%, #443C68 80%, ); 
 //   background-color: #443C68;
 }
 nav{
-    background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);
+    // background: linear-gradient(360deg, #393053 29.9%, #443C68 80%);
+    // background: linear-gradient(360deg, #4f359a 29.9%, #66265c 80%);
+    background-color: #0f0e61;
 }
 .profile-photo{
 
@@ -13,7 +18,7 @@ nav{
 
 }
 .header__sm-menu{
-    background-color: #635985;
+    background-color: #0f0e61;
 }
 .sm-menu__ul li:first-child{
     border-top: 1px solid #eee;
@@ -21,14 +26,19 @@ nav{
 .sm-menu__ul li{
     border-bottom: 1px solid #eee;
 }
+.tittle-wrapper>img{
+    background-image: url(/assets/img/foto-perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*------------------------------------*\
+  #MEDIA QUERYS
+\*------------------------------------*/
 @media (max-width: 640px){
-    .profile-photo{
-        margin-top: 0.25rem;
-        width: 10%;
-        height: 80%;
+    .tittle-wrapper>img{
+    height: 100%;
     }
 }
-
 @media (min-width: 640px){
     .burger {
     display: none;
@@ -37,5 +47,10 @@ nav{
 @media (max-width: 640px){
     .nav_ul {
     display: none;
+    }
+}
+@media (max-width: 640px){
+    h6{
+        font-size: 20px;
     }
 }
